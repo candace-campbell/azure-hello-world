@@ -1,14 +1,14 @@
 # This is for already existing resources created outside of terraform
 
-#data "azurerm_resource_group" "rg" {
-#  name = "cdc-coe-emmanuel-apau" # update with your existing resource group
-#}
-#
-#data "azurerm_client_config" "current" {}
-#
-#data "azuread_service_principal" "service_account" {
-#  display_name = "cdc-coe-emmanuel-svc-acc"
-#}
+data "azurerm_resource_group" "rg" {
+  name = "cdc-coe-candace-campbell" # update with your existing resource group
+}
+
+data "azurerm_client_config" "current" {}
+
+data "azuread_service_principal" "service_account" {
+  display_name = "cdc-coe-emmanuel-svc-acc"
+}
 
 # not enough access
 # data "azuread_user" "emmanuel_apau" {
