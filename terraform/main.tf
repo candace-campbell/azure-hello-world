@@ -1,5 +1,5 @@
 locals {
-  unique_name = "cdc-coe-eman" # update with your unique name
+  unique_name = "cdc-coe-candace" # update with your unique name
 }
 
 # Create a virtual network within the resource group

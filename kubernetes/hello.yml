@@ -16,12 +16,12 @@ spec:
         app: hello-world
     spec:
       containers:
-        - image: etapau/hello-world
+        - image: cdcampbell24/hello-world:latest
           imagePullPolicy: Always
           name: hello-world
-          ports:
-            - containerPort: 9000
-              protocol: TCP
+          # ports:
+          #   - containerPort: 9000
+          #     protocol: TCP
       nodeSelector:
         kubernetes.io/os: linux
       restartPolicy: Always
@@ -35,7 +35,8 @@ spec:
   ports:
     - port: 80
       protocol: TCP
-      targetPort: 9000
+      # targetPort: 9000
+      # nodePort: 30038
   selector:
     app: hello-world
-  type: NodePort
+  type: LoadBalancer
